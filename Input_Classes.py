@@ -1,15 +1,18 @@
-from Map_Display import *
-from Map_Array import *
-from Enemy_Classes import *
-from Combat_Functions import *
+from map.map_display import *
+from map.map_array import *
+from enemy_classes import *
+from combat import *
 import sys
+
+"""
+    This file is for all player inputs that are not hardcoded or attack sequences.
+"""
+
 
 def player_input(player):
     inputtext = input("What do you want to do?")
 
     """Navigation Inputs"""
-    if inputtext == "Map":
-        Map_Display()
 
     if inputtext == "North":
         player.y = player.y + 1
@@ -28,7 +31,7 @@ def player_input(player):
         print("You have moved West one square")
 
     if inputtext == "Where am I?":
-        print((map[player.x][player.y]))
+        print((game_map[player.x][player.y]))
 
     if inputtext == "Pos":
         print(player.x)
@@ -49,10 +52,13 @@ def player_input(player):
         print("Player Speed")
         print(player.spd)
 
+    if inputtext == "Map":
+        map_display()
 
     """Spawn Enemies"""
-    if inputtext == "Spawn Wolf":
-        wolf0 = Wolf()
+    """This is for dev purposes"""
+    if inputtext == "Spawn wolf":
+        wolf0 = wolf()
         print("Enemies Appear!")
         battle([player, wolf0], [player], [wolf0])
         if player.hp > 0:
@@ -61,10 +67,10 @@ def player_input(player):
             print("You died")
             sys.exit()
 
-    if inputtext == "Spawn Bandit":
-        bandit0 = Bandit()
+    if inputtext == "Spawn bandit":
+        bandit0 = bandit()
 
-        print("An Enemy Appears!")
+        print("An enemy Appears!")
         battle([player, bandit0], [player], [bandit0])
         if player.hp > 0:
             print("You defeated the bandit")

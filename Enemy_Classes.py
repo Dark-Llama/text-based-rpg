@@ -1,17 +1,19 @@
-from Character_Class import *
+from character_setup import *
 
-class Enemy(Character):
-    """Create Enemy"""
 
+class enemy(character):
     def __init__(self):
         pass
 
+
 """Beast Enemies"""
-class Wolf(Enemy):
-    """Create Wolf Enemy"""
+
+
+class wolf(enemy):
+    """Create wolf enemy"""
 
     def __init__(self):
-        self.name = "Wolf"
+        self.name = "wolf"
         self.hp = 22
         self.mp = 0
         self.atk = 4
@@ -20,11 +22,12 @@ class Wolf(Enemy):
         self.luck = 10
         self.exp = 5
 
-class Bear(Enemy):
-    """Create Bear Enemy"""
+
+class bear(enemy):
+    """Create bear enemy"""
 
     def __init__(self):
-        self.name = "Bear"
+        self.name = "bear"
         self.hp = 260
         self.mp = 0
         self.atk = 30
@@ -33,11 +36,12 @@ class Bear(Enemy):
         self.luck = 10
         self.exp = 50
 
-class Troll(Enemy):
-    """Create Troll Enemy"""
+
+class troll(enemy):
+    """Create troll enemy"""
 
     def __init__(self):
-        self.name = "Troll"
+        self.name = "troll"
         self.hp = 280
         self.mp = 0
         self.atk = 35
@@ -46,12 +50,15 @@ class Troll(Enemy):
         self.luck = 10
         self.exp = 50
 
-"""Bandit Enemies"""
-class Bandit(Enemy):
-    """Create Bandit Enemy"""
+
+"""bandit Enemies"""
+
+
+class bandit(enemy):
+    """Create bandit enemy"""
 
     def __init__(self):
-        self.name = "Bandit"
+        self.name = "bandit"
         self.hp = 35
         self.mp = 0
         self.atk = 35
@@ -60,11 +67,12 @@ class Bandit(Enemy):
         self.luck = 20
         self.exp = 10
 
-class Bandit_Outlaw(Enemy):
-    """Create Bandit_Outlaw Enemy"""
+
+class bandit_outlaw(enemy):
+    """Create bandit_outlaw enemy"""
 
     def __init__(self):
-        self.name = "Bandit Outlaw"
+        self.name = "bandit Outlaw"
         self.hp = 109
         self.mp = 25
         self.atk = 43
@@ -73,11 +81,12 @@ class Bandit_Outlaw(Enemy):
         self.luck = 25
         self.exp = 15
 
-class Bandit_Thug(Enemy):
-    """Create Bandit_Thug Enemy"""
+
+class bandit_thug(enemy):
+    """Create bandit_thug enemy"""
 
     def __init__(self):
-        self.name = "Bandit Thug"
+        self.name = "bandit Thug"
         self.hp = 238
         self.mp = 25
         self.atk = 53
@@ -86,11 +95,12 @@ class Bandit_Thug(Enemy):
         self.luck = 25
         self.exp = 25
 
-class Bandit_Highwayman(Enemy):
-    """Create Bandit_Highwayman Enemy"""
+
+class bandit_highwayman(enemy):
+    """Create bandit_highwayman enemy"""
 
     def __init__(self):
-        self.name = "Bandit Highwayman"
+        self.name = "bandit Highwayman"
         self.hp = 318
         self.mp = 25
         self.atk = 76
@@ -99,11 +109,12 @@ class Bandit_Highwayman(Enemy):
         self.luck = 25
         self.exp = 45
 
-class Bandit_Plunderer(Enemy):
-    """Create Bandit_Plunderer Enemy"""
+
+class bandit_plunderer(enemy):
+    """Create bandit_plunderer enemy"""
 
     def __init__(self):
-        self.name = "Bandit Plunderer"
+        self.name = "bandit Plunderer"
         self.hp = 398
         self.mp = 25
         self.atk = 86
@@ -112,11 +123,12 @@ class Bandit_Plunderer(Enemy):
         self.luck = 25
         self.exp = 60
 
-class Bandit_Marauder(Enemy):
-    """Create Bandit_Marauder Enemy"""
+
+class bandit_marauder(enemy):
+    """Create bandit_marauder enemy"""
 
     def __init__(self):
-        self.name = "Bandit Marauder"
+        self.name = "bandit Marauder"
         self.hp = 489
         self.mp = 25
         self.atk = 123

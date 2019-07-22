@@ -1,6 +1,6 @@
-from Character_Class import *
+from character_setup import *
 
-class Player(Character):
+class Player(character):
     """Create Player Class"""
     # initialize player at level 1 with 0 experience
     exp = 0

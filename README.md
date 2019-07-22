@@ -3,8 +3,8 @@ This is a text based RPG written in python. Work in progress. This has been deve
 
 This project was developed in Pycharm on Python 3.7. You need the following packages to run it
 
-  sys
-  json
-  random
+  -sys
+  
+  -random
  
- This project was originaly built on code from @acaggiano. 
+ This project was originally built on code from @acaggiano. 
