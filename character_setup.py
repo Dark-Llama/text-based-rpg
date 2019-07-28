@@ -1,8 +1,8 @@
 import random
 
 
-class character:
-    """Create character Class"""
+class Character:
+    """Create Character Class"""
     name = ""
 
     def __init__(self):

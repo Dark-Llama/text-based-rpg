@@ -1,7 +1,7 @@
 """
-    This is the game_map array.
+    This is the map_array array.
     It is 11x11. As you move through the game you are placed in one of these squares.
-    To display game_map, run map_display.py
+    To display map_array, run map_display.py
     ---Key---
     F - Forest
     D - Desert
@@ -14,7 +14,7 @@
     S - Swamp Plains
 """
 
-game_map = [
+map_array = [
     ["F", "F", "F", "D", "D", "D", "D", "M", "M", "M", "M"],
     ["F", "F", "F", "F", "D", "D", "D", "P", "M", "P", "M"],
     ["F", "L", "F", "E", "F", "D", "P", "P", "P", "P", "M"],

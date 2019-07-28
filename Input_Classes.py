@@ -27,11 +27,11 @@ def player_input(player):
         print("You have moved East one square")
 
     if inputtext == "West":
-        player.x = player.x -1
+        player.x = player.x - 1
         print("You have moved West one square")
 
     if inputtext == "Where am I?":
-        print((game_map[player.x][player.y]))
+        print((map_array[player.x][player.y]))
 
     if inputtext == "Pos":
         print(player.x)
@@ -57,25 +57,23 @@ def player_input(player):
 
     """Spawn Enemies"""
     """This is for dev purposes"""
-    if inputtext == "Spawn wolf":
-        wolf0 = wolf()
+    if inputtext == "Spawn Wolf":
+        wolf0 = Wolf()
         print("Enemies Appear!")
         battle([player, wolf0], [player], [wolf0])
         if player.hp > 0:
-            print("You defeated the wolf")
+            print("You defeated the Wolf")
         else:
             print("You died")
             sys.exit()
 
-    if inputtext == "Spawn bandit":
-        bandit0 = bandit()
+    if inputtext == "Spawn Bandit":
+        bandit0 = Bandit()
 
-        print("An enemy Appears!")
+        print("An Enemy Appears!")
         battle([player, bandit0], [player], [bandit0])
         if player.hp > 0:
-            print("You defeated the bandit")
+            print("You defeated the Bandit")
         else:
             print("You Died")
             sys.exit()
-
-    player_input(player)

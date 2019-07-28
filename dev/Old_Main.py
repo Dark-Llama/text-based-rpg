@@ -32,7 +32,7 @@ elif direction == "2":
     while not back:
         bandit0 = Bandit()
 
-        print("An enemy Appears!")
+        print("An Enemy Appears!")
         battle([player, bandit0], [player], [bandit0])
         if player.hp > 0:
             print("Behind the slime is a path leading into the woods, do you continue or turn back?")

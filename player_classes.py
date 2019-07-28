@@ -1,6 +1,7 @@
 from character_setup import *
 
-class Player(character):
+
+class Player(Character):
     """Create Player Class"""
     # initialize player at level 1 with 0 experience
     exp = 0
@@ -41,7 +42,7 @@ class Player(character):
                 self.levels.remove(value)
                 break
 
-    # take in enemies defeated from battle and add exp to total player controlled character
+    # take in enemies defeated from battle and add exp to total player controlled Character
     def calculate_experience(self, enemies):
         exp_gain = 0
         for enemy in enemies:
@@ -70,10 +71,11 @@ class Player(character):
         else:
             raise Exception("You have no items")
 
+
 def character_create():
     name = input("Hello brave adventurer, what is your name? : ")
     print()
-    print("Pick your character")
+    print("Pick your Character")
     print()
     print("1. Barbarian")
     print("2. Bard")
@@ -133,6 +135,7 @@ def character_create():
                 print("Invalid input.")
                 continue
 
+
 # create different class types
 class Barbarian(Player):
     """Defines Barbarian Class"""
@@ -150,6 +153,7 @@ class Barbarian(Player):
         self.x = 0
         self.y = 0
 
+
 class Bard(Player):
     """Defines Bard Class"""
 
@@ -166,6 +170,7 @@ class Bard(Player):
         self.x = 0
         self.y = 0
 
+
 class Cleric(Player):
     """Defines Cleric Class"""
 
@@ -181,6 +186,7 @@ class Cleric(Player):
         self.stats_init()
         self.x = 0
         self.y = 0
+
 
 class Druid(Player):
     """Defines Druid Class"""
@@ -214,6 +220,7 @@ class Fighter(Player):
         self.x = 0
         self.y = 0
 
+
 class Monk(Player):
     """Defines Monk Class"""
 
@@ -229,6 +236,7 @@ class Monk(Player):
         self.stats_init()
         self.x = 0
         self.y = 0
+
 
 class Paladin(Player):
     """Defines Paladin Class"""
@@ -246,6 +254,7 @@ class Paladin(Player):
         self.x = 0
         self.y = 0
 
+
 class Ranger(Player):
     """Defines Ranger Class"""
 
@@ -262,6 +271,7 @@ class Ranger(Player):
         self.x = 0
         self.y = 0
 
+
 class Rouge(Player):
     """Defines Rouge Class"""
     def __init__(self, name):
@@ -276,6 +286,7 @@ class Rouge(Player):
         self.stats_init()
         self.x = 0
         self.y = 0
+
 
 class Sorcerer(Player):
     """Defines Sorcerer Class"""
@@ -293,6 +304,7 @@ class Sorcerer(Player):
         self.x = 0
         self.y = 0
 
+
 class Warlock(Player):
     """Defines Warlock Class"""
 
@@ -308,6 +320,7 @@ class Warlock(Player):
         self.stats_init()
         self.x = 0
         self.y = 0
+
 
 class Wizard(Player):
     """Defines Wizard Class"""

@@ -16,7 +16,7 @@ def check_health(party):
 
 
 def pick_target(enemies):
-    print("Which enemy do you target?")
+    print("Which Enemy do you target?")
     print()
 
     for idx, enemy in enumerate(enemies):
